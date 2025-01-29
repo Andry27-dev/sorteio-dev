@@ -85,7 +85,7 @@ button:active {
 }
 
 /* Responsividade para telas menores */
-@media (max-width: 480px) {
+@media (max-width: 400px) {
 
     .logo-dado {
         width: 400px;
