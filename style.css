@@ -84,11 +84,17 @@ button:active {
     opacity: 0.8;
 }
 
+@media (max-width: 768px) {
+    .logo-dado {
+        width: 250px;
+    }
+}
+
 /* Responsividade para telas menores */
-@media (max-width: 400px) {
+@media (max-width: 480px) {
 
     .logo-dado {
-        width: 400px;
+        width: 200px;
     }
     h2 {
         font-size: 22px;
@@ -109,3 +115,5 @@ button:active {
         font-size: 20px;
     }
 }
+
+
