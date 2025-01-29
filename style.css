@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* Esse é o código adquirido no googlfontes para inserir no CSS*/
+
+* {
+/* margem */    margin: 0;
+/*Preenchimento */ padding: 0;
+/*Contorno; nenhum*/outline: none;
+/*dimensionamento de caixa: */box-sizing: border-box;
+/* família da fonte */font-family: "Roboto", sans-serif;
+}
+
+body {
+/* Fundo: Preto */ background: black;
+/* exibir: flexionar*/display: flex;
+/* alinhar itens: centro */ align-items: center;
+/* justificar-conteudo: centro */  justify-content: center;
+/* direção flexivel: colunas */  flex-direction: column;
+/* altura mínima  */  min-height: 100vh;
+/* preenchimento */ padding: 20px;
+/* alinhamento de texto */ text-align: center;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 28px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Ajusta os inputs */
+.input-min, .input-max, .input-resultado {
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 14px;
+    height: 60px;
+    width: 100%;
+    max-width: 300px;
+    padding-left: 15px;
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.input-resultado {
+    height: 150px;
+    font-size: 50px;
+    color: rgb(4, 219, 51);
+    text-align: center;
+}
+
+/* Ajusta os inputs min e max para ficarem lado a lado em telas maiores */
+div {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Botão responsivo */
+button {
+    background: yellow;
+    box-shadow: 0px 18px 40px rgba(174, 195, 70, 0.35);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    height: 60px;
+    color: black;
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 22px;
+    }
+
+    .input-min, .input-max, .input-resultado {
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .input-resultado {
+        height: 120px;
+        font-size: 40px;
+    }
+
+    button {
+        height: 50px;
+        font-size: 20px;
+    }
+}
